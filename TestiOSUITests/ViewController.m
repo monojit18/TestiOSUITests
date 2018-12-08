@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
@@ -26,4 +27,23 @@
 }
 
 
+- (IBAction)onClickMe:(id)sender
+{
+    
+    NSString *pClickMeString = self.ClickMeButton.titleLabel.text;
+    self.ClickMeTextField.text = pClickMeString;
+    
+}
+
+- (IBAction)onViewMe:(id)sender
+{
+    
+    UIStoryboard* pMainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController* pViewMeViewController = [pMainStoryboard
+                                               instantiateViewControllerWithIdentifier
+                                               :@"ViewMeViewController"];
+    
+    [self presentViewController:pViewMeViewController animated:YES completion:nil];
+    
+}
 @end

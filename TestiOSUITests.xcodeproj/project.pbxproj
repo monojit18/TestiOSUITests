@@ -13,7 +13,8 @@
 		683B7C8A2146AF8A00E3F5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683B7C892146AF8A00E3F5B1 /* Assets.xcassets */; };
 		683B7C8D2146AF8A00E3F5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 683B7C8B2146AF8A00E3F5B1 /* LaunchScreen.storyboard */; };
 		683B7C902146AF8A00E3F5B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 683B7C8F2146AF8A00E3F5B1 /* main.m */; };
-		683B7C9A2146AF8A00E3F5B1 /* TestiOSUITestsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 683B7C992146AF8A00E3F5B1 /* TestiOSUITestsUITests.m */; };
+		683B7C9A2146AF8A00E3F5B1 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 683B7C992146AF8A00E3F5B1 /* Tests.m */; };
+		68B9D2B921BC105C00A840B6 /* ViewMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B9D2B821BC105C00A840B6 /* ViewMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,10 @@
 		683B7C8E2146AF8A00E3F5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		683B7C8F2146AF8A00E3F5B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		683B7C952146AF8A00E3F5B1 /* TestiOSUITestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestiOSUITestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		683B7C992146AF8A00E3F5B1 /* TestiOSUITestsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestiOSUITestsUITests.m; sourceTree = "<group>"; };
+		683B7C992146AF8A00E3F5B1 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		683B7C9B2146AF8A00E3F5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68B9D2B721BC105C00A840B6 /* ViewMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewMeViewController.h; sourceTree = "<group>"; };
+		68B9D2B821BC105C00A840B6 /* ViewMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				683B7C8B2146AF8A00E3F5B1 /* LaunchScreen.storyboard */,
 				683B7C8E2146AF8A00E3F5B1 /* Info.plist */,
 				683B7C8F2146AF8A00E3F5B1 /* main.m */,
+				68B9D2B721BC105C00A840B6 /* ViewMeViewController.h */,
+				68B9D2B821BC105C00A840B6 /* ViewMeViewController.m */,
 			);
 			path = TestiOSUITests;
 			sourceTree = "<group>";
@@ -97,7 +102,7 @@
 		683B7C982146AF8A00E3F5B1 /* TestiOSUITestsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				683B7C992146AF8A00E3F5B1 /* TestiOSUITestsUITests.m */,
+				683B7C992146AF8A00E3F5B1 /* Tests.m */,
 				683B7C9B2146AF8A00E3F5B1 /* Info.plist */,
 			);
 			path = TestiOSUITestsUITests;
@@ -204,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				683B7C852146AF8900E3F5B1 /* ViewController.m in Sources */,
+				68B9D2B921BC105C00A840B6 /* ViewMeViewController.m in Sources */,
 				683B7C902146AF8A00E3F5B1 /* main.m in Sources */,
 				683B7C822146AF8900E3F5B1 /* AppDelegate.m in Sources */,
 			);
@@ -213,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				683B7C9A2146AF8A00E3F5B1 /* TestiOSUITestsUITests.m in Sources */,
+				683B7C9A2146AF8A00E3F5B1 /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +373,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.monojitms.development.TestStaticUITests.TestiOSUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monojitms.development.TestiOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -383,7 +389,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.monojitms.development.TestStaticUITests.TestiOSUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monojitms.development.TestiOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -399,7 +405,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.monojitms.development.TestStaticUITests.TestiOSUITestsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monojitms.development.TestiOSUITestsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TestiOSUITests;
@@ -416,7 +422,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.monojitms.development.TestStaticUITests.TestiOSUITestsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monojitms.development.TestiOSUITestsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TestiOSUITests;
